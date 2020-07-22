@@ -1,0 +1,304 @@
+{
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "发现",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/index/mall",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/index/center",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/index/cart",
+			"style": {
+				"navigationBarTitleText": "购物车",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/mall/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/mall/buy",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/mall/pay",
+			"style": {
+				"navigationBarTitleText": "付款页",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/mall/orderList",
+			"style": {
+				"navigationBarTitleText": "订单列表",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/mall/orderDetail",
+			"style": {
+				"navigationBarTitleText": "订单详情",
+				"enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/common/common",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/mall/address",
+			"style": {
+				"navigationBarTitleText": "地址列表",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/mall/editAddress",
+			"style": {
+				"navigationBarTitleText": "修改地址",
+				"navigationBarBackgroundColor": "#fff",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/center/index",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/mall/goodDetail",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": true
+			}
+		},
+		{
+			"path": "pages/center/collect",
+			"style": {
+				"navigationBarTitleText": "我的收藏",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": false,
+				"backgroundColorTop": "#fff",
+				"backgroundColorBottom": "#fff",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		},
+		{
+			"path": "pages/center/userInfo",
+			"style": {
+				"navigationBarTitleText": "个人信息",
+				"navigationBarTextStyle": "black",
+				"enablePullDownRefresh": false,
+				"backgroundColorTop": "#fff",
+				"backgroundColorBottom": "#fff",
+				"navigationBarBackgroundColor": "#fff"
+			}
+		}
+	],
+	"subpackages": [{
+		"root": "pages/plugin",
+		"pages": [{
+				"path": "integralMall/index",
+				"style": {
+					"navigationBarTitleText": "积分中心",
+					"navigationBarTextStyle": "black",
+					"enablePullDownRefresh": true,
+					"navigationBarBackgroundColor": "#ffffff"
+				}
+			},
+			{
+				"path": "integralMall/record",
+				"style": {
+					"navigationBarTitleText": "积分记录",
+					"navigationBarTextStyle": "white",
+					"enablePullDownRefresh": true,
+					"navigationBarBackgroundColor": "#273337"
+				}
+			},
+			{
+				"path": "integralMall/task",
+				"style": {
+					"navigationBarTitleText": "我的任务",
+					"navigationBarTextStyle": "white",
+					"enablePullDownRefresh": true,
+					"navigationBarBackgroundColor": "#273337"
+				}
+			},
+			{
+				"path": "integralMall/details",
+				"style": {
+					"navigationBarTitleText": "商品详情",
+					"navigationBarTextStyle": "black",
+					"enablePullDownRefresh": true,
+					"navigationBarBackgroundColor": "#fff"
+				}
+			},
+			{
+				"path": "information/index",
+				"style": {
+					"navigationBarTitleText": "",
+					"navigationBarTextStyle": "black",
+					"enablePullDownRefresh": true,
+					"navigationBarBackgroundColor": "#fff",
+					"usingComponents": {
+						"wxparser": "plugin://wxparserPlugin/wxparser"
+					}
+				}
+			},
+			{
+				"path": "question/index",
+				"style": {
+					"navigationBarTitleText": "大家都在问",
+					"navigationBarTextStyle": "black",
+					"enablePullDownRefresh": false,
+					"backgroundColorTop": "#fff",
+					"backgroundColorBottom": "#fff",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			}, {
+				"path": "question/collect",
+				"style": {
+					"navigationBarTitleText": "我的问答",
+					"navigationBarTextStyle": "black",
+					"enablePullDownRefresh": false,
+					"backgroundColorTop": "#fff",
+					"backgroundColorBottom": "#fff",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			}, {
+				"path": "question/answer",
+				"style": {
+					"navigationBarTitleText": "我来回答",
+					"navigationBarTextStyle": "black",
+					"enablePullDownRefresh": false,
+					"backgroundColorTop": "#fff",
+					"backgroundColorBottom": "#fff",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			}, {
+				"path": "question/create",
+				"style": {
+					"navigationBarTitleText": "我来提问",
+					"navigationBarTextStyle": "black",
+					"enablePullDownRefresh": false,
+					"backgroundColorTop": "#fff",
+					"backgroundColorBottom": "#fff",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			}, {
+				"path": "question/details",
+				"style": {
+					"navigationBarTitleText": "问题详情",
+					"navigationBarTextStyle": "black",
+					"enablePullDownRefresh": false,
+					"disableScroll": true,
+					"backgroundColorTop": "#fff",
+					"backgroundColorBottom": "#fff",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			}, {
+				"path": "question/response",
+				"style": {
+					"navigationBarTitleText": "我来回答",
+					"navigationBarTextStyle": "black",
+					"enablePullDownRefresh": false,
+					"disableScroll": true,
+					"backgroundColorTop": "#fff",
+					"backgroundColorBottom": "#fff",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			},{
+				"path": "question/addTopic",
+				"style": {
+					"navigationBarTitleText": "添加话题",
+					"navigationBarTextStyle": "black",
+					"enablePullDownRefresh": false,
+					"disableScroll": false,
+					"backgroundColorTop": "#fff",
+					"backgroundColorBottom": "#fff",
+					"navigationBarBackgroundColor": "#fff"
+				}
+			},
+			{
+				"path": "lucky/index",
+				"style": {
+					"navigationBarTitleText": "会员抽奖",
+					"enablePullDownRefresh": true
+				}
+			},
+			{
+				"path": "information/maintainlist",
+				"style": {
+					"navigationBarTitleText": "",
+					"enablePullDownRefresh": true
+				}
+			}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTitleText": "方太",
+		"navigationBarBackgroundColor": "#293539",
+		"backgroundColor": "#F8F8F8",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"color": "#fff",
+		"borderStyle": "white",
+		"backgroundColor": "#293539",
+		"list": [{
+				"pagePath": "pages/index/index",
+				"iconPath": "/static/images/index.png",
+				"selectedIconPath": "/static/images/active_index.png",
+				"text": ""
+			},
+			{
+				"pagePath": "pages/index/mall",
+				"iconPath": "/static/images/mall.png",
+				"selectedIconPath": "/static/images/active_mall.png",
+				"text": ""
+			},
+			{
+				"pagePath": "pages/index/center",
+				"iconPath": "/static/images/center.png",
+				"selectedIconPath": "/static/images/active_center.png",
+				"text": ""
+			}
+		]
+	}
+}

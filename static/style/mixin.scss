@@ -1,0 +1,18 @@
+@mixin overtext($num:2) {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $num;
+}
+@mixin normalbtn($w,$h){
+  width: $w;
+  height: $h;
+  line-height: $h;
+  border-radius: $w / 2;
+  text-align: center;
+}
+@mixin between {
+ display: flex; 
+ align-items: center;
+ justify-content: space-between;
+}
