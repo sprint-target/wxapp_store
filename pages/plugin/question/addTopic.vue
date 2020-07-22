@@ -7,10 +7,10 @@
     <view class="top">
       <!-- 顶部搜索框 -->
       <view class="search">
-        <view v-if="topic_search" class="clear">×</view>
-        <view class="icon">!</view>
+        <view v-if="topic_search" class="clear" @tap.stop="toClear()">×</view>
+        <view class="icon iconfont iconsousuo"></view>
         <view class="input">
-          <input type="text" placeholder="请在此搜索话题..." v-model="topic" />
+          <input type="text" placeholder="请在此搜索话题..." v-model="topic_search" />
         </view>
       </view>
       <!-- 添加数量限制 -->
@@ -36,7 +36,7 @@
         <view class="right" @tap="toAddTopic(item,topic_allArr,index)">添加</view>
       </view>
     </view>
-    <view class="bottom">
+    <view class="bottom" :style="phone_model?'padding-bottom:50rpx':''">
       <view
         class="btn"
         v-text="'完成'"
@@ -61,7 +61,39 @@ export default {
         { name: "抽油机", questionsNum: "262" },
         { name: "岛式抽油机", questionsNum: "26" },
         { name: "洗碗机", questionsNum: "62" },
-        { name: "油烟机", questionsNum: "15" }
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "15" },
+        { name: "油烟机", questionsNum: "1155" }
       ]
     };
   },
@@ -129,7 +161,10 @@ export default {
           delta: 1
         });
       }
-    }, 600)
+    }, 600),
+    toClear() {
+      this.topic_search = null;
+    }
   }
 };
 </script>
@@ -156,7 +191,9 @@ export default {
       border-radius: 30rpx;
       overflow: hidden;
       .icon {
+        margin: 0 15rpx 0 20rpx;
         flex: 1;
+        font-size: 28rpx;
         text-align: center;
         //   border: 1rpx solid yellow;
       }
@@ -170,6 +207,13 @@ export default {
       .clear {
         position: absolute;
         right: 20rpx;
+        line-height: 50rpx;
+        font-weight: bolder;
+        font-size: 40rpx;
+        text-align: right;
+        color: $text-color;
+        z-index: 999;
+        width: 60rpx;
       }
     }
     //添加数量限制
